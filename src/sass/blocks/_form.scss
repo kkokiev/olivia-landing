@@ -18,6 +18,10 @@
 	@include font-size(1.6);
 	@include line-height(2.4);
 	@include border-radius(0);
+	&::-webkit-input-placeholder {color:$dark;}
+	&::-moz-placeholder          {color:$dark;}/* Firefox 19+ */
+	&:-moz-placeholder           {color:$dark;}/* Firefox 18- */
+	&:-ms-input-placeholder      {color:$dark;}
 }
 
 .form__group-textarea{
@@ -32,6 +36,11 @@
 	@include line-height(2.4);
 	@include border-radius(0);
 	resize: none;
+
+	&::-webkit-input-placeholder {color:$dark;}
+	&::-moz-placeholder          {color:$dark;}/* Firefox 19+ */
+	&:-moz-placeholder           {color:$dark;}/* Firefox 18- */
+	&:-ms-input-placeholder      {color:$dark;}
 }
 
 .form__submit{

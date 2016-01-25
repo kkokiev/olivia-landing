@@ -8,6 +8,10 @@
 	text-align: center;
 }
 
+.section_newsletter{
+	@include gr2();
+}
+
 .section_footer{
 	padding-bottom: 0;
 	@include gr1();
