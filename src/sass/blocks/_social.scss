@@ -1,0 +1,36 @@
+.social{
+	display: inline-block;
+	padding: 20px 0;
+}
+
+.social__item{
+	display: inline-block;
+	margin-right: 25px;
+
+	&:last-child{
+		margin-right: 0;
+	}
+}
+
+.social__link{
+	display: inline-block;
+	height: 48px;
+	width: 48px;
+	color: $light;
+	@include font-size(2);
+	@include line-height(4.8);
+	@include border-radius(50%);
+	@include tr(.4s);
+
+	&:hover,
+	&:focus{
+		color: $light;
+		background: $brand-2;
+	}
+}
+
+@media (max-width: 480px) {
+	.social__item{
+		margin-right: 10px;
+	}
+}

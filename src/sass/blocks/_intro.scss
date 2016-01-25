@@ -1,0 +1,94 @@
+.intro{
+	padding-top: 80px;
+	color: $light;
+}
+
+.intro__title{
+	margin-top: 0;
+	margin-bottom: 22px;
+	font-family: $bold;
+	@include font-size(6);
+	@include line-height(7.2);
+	text-shadow: 0 1px 1px $dark;
+}
+
+.intro__text{
+	margin-bottom: 45px;
+	@include font-size(1.6);
+	@include line-height(3);
+}
+
+.intro__subtitle{
+	font-family: $semibold;
+	@include font-size(2.8);
+	@include line-height(2.8);
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.intro__links{
+
+}
+
+.intro__btn{
+	display: inline-block;
+	height: 70px;
+	width: 200px;
+	margin-right: 30px;
+	border-radius: 10px;
+	@include tr(.3s);
+
+	&:hover{
+		box-shadow: 0 0 6px 3px rgba(255, 255, 255, .3);
+	}
+
+	&:last-child{
+		margin-right: 0;
+	}
+}
+
+.intro__btn-img{
+	width: 100%;
+}
+
+@media (max-width: 1200px) {
+	.intro{
+		padding-top: 0px;
+	}
+}
+
+@media (max-width: 992px) {
+	.intro{
+		padding-top: 20px;
+	}
+
+	.intro__title{
+		margin-bottom: 22px;
+		@include font-size(3);
+		@include line-height(4);
+	}
+
+	.intro__subtitle{
+		font-family: $semibold;
+		@include font-size(2);
+		@include line-height(2);
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+
+	.intro__btn{
+		height: 49px;
+		width: 140px;
+		margin-right: 10px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.intro{
+		text-align: center;
+	}
+}

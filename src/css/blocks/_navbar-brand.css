@@ -1,0 +1,11 @@
+.navbar-brand {
+  display: inline-block;
+  height: 60px;
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  .navbar-brand {
+    padding: 0 15px;
+  }
+}

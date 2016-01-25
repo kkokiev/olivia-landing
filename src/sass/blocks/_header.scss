@@ -1,0 +1,34 @@
+.header{
+	position: relative;
+	padding-bottom: 60px;
+	@include gr1();
+}
+
+.header__filter{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: $light;
+	background-image: url("../img/static/bg-texture.png");
+	opacity: .2;
+}
+
+.header__content{
+	padding-top: 100px;
+}
+
+.header__img{
+	margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+	.header__content{
+		padding-top: 20px;
+	}
+}
+
+@media (max-width: 992px) {
+
+}

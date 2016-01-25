@@ -18,4 +18,17 @@ a{
 //blocks, writed according to BEM style guide, check https://bem.info/ for more info
 
 @import "blocks/page";
-
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/navbar";
+@import "blocks/navbar-brand";
+@import "blocks/nav";
+@import "blocks/navbar-nav";
+@import "blocks/navbar-toggle";
+@import "blocks/navbar-header";
+@import "blocks/navbar-collapse";
+@import "blocks/logo";
+@import "blocks/intro";
+@import "blocks/section";
+@import "blocks/form";
+@import "blocks/social";

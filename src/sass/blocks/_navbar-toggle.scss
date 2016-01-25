@@ -1,0 +1,9 @@
+.navbar-toggle .icon-bar{
+	background: $light;
+}
+
+@media (max-width: 992px) {
+	.navbar-toggle{
+		display: block;
+	}
+}

@@ -1,0 +1,21 @@
+.form {
+  position: relative;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form__group {
+  float: left;
+  width: 24%;
+  margin-right: 1%;
+}
+
+.form__group-textarea {
+  width: 99%;
+}
+
+.form__textarea {
+  display: block;
+  height: 160px !important;
+}

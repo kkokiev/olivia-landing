@@ -1,0 +1,14 @@
+.navbar-collapse{
+	border-top: none !important;
+	box-shadow: none;
+}
+
+@media (max-width: 992px) {
+	.navbar-collapse.collapse {
+		display: none!important;
+	}
+
+	.collapse.in{
+		display:block !important;
+	}
+}
