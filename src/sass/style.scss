@@ -1,0 +1,21 @@
+//components
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "helper";
+
+//general styles
+*,
+*:after,
+*:before{
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+//blocks, writed according to BEM style guide, check https://bem.info/ for more info
+
+@import "blocks/page";
+

@@ -1,0 +1,17 @@
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin tr($time){
+	-webkit-transition: all $time ease;
+	-moz-transition: all $time ease;
+	-o-transition: all $time ease;
+	transition: all $time ease;
+}
+
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 10) + px;
+	font-size: $sizeValue + rem;
+}
