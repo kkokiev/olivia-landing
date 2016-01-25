@@ -8,6 +8,11 @@
 	text-align: center;
 }
 
+.section_screenshots{
+	background: $dark url(../img/static/bg-photo-2.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+
 .section_newsletter{
 	@include gr2();
 }
@@ -32,6 +37,11 @@
 	margin-top: 0px;
 	font-family: $semibold;
 	@include font-size(6);
+}
+
+.section__title_subtitle{
+	font-family: $font;
+	@include font-size(4.8);
 }
 
 .section__text{

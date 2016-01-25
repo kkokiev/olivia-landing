@@ -1,0 +1,45 @@
+.carousel-screenshots{
+	padding-top: 90px;
+	.carousel-indicators{
+		bottom: -30px;
+
+		li{
+			height: 14px;
+			width: 14px;
+			margin: 0;
+			margin-right: 20px;
+			border: 2px solid $brand-2;
+			@include border-radius(50%);
+
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+
+	.carousel-indicators .active{
+		background: $brand-2;
+	}
+
+	.row>div{
+		margin-bottom: 30px;
+	}
+
+	.row img{
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 768px) {
+	.carousel-screenshots{
+		padding-top: 30px;
+	}
+}
+
+@media (max-width: 480px) {
+	.carousel-screenshots{
+		.row>div{
+			padding-bottom: 20px;
+		}
+	}
+}

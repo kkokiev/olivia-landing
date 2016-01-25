@@ -59,12 +59,12 @@ a {
   background: #b52bd7;
   /* Old browsers */
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(-4deg, #b52bd7 0%, #4173f1 100%);
+  background: -webkit-linear-gradient(-4deg, #a62ad7 0%, #4183f1 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-linear-gradient(356deg, #b52bd7 0%, #4173f1 100%);
-  background: linear-gradient(94deg, #b52bd7 0%, #4173f1 100%);
+  background: -webkit-linear-gradient(356deg, #a62ad7 0%, #4183f1 100%);
+  background: linear-gradient(94deg, #a62ad7 0%, #4183f1 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b52bd7', endColorstr='#4173f1',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-1', endColorstr='$brand-2',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
 
@@ -273,7 +273,7 @@ a {
   .intro__btn {
     height: 49px;
     width: 140px;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   .intro__btn:last-child {
     margin-right: 0;
@@ -293,16 +293,21 @@ a {
   text-align: center;
 }
 
+.section_screenshots {
+  background: #3b434d url(../img/static/bg-photo-2.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
 .section_newsletter {
   background: #b52bd7;
   /* Old browsers */
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(-4deg, #4173f1 0%, #b52bd7 100%);
+  background: -webkit-linear-gradient(-4deg, #4183f1 0%, #a62ad7 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-linear-gradient(356deg, #4173f1 0%, #b52bd7 100%);
-  background: linear-gradient(94deg, #4173f1 0%, #b52bd7 100%);
+  background: -webkit-linear-gradient(356deg, #4183f1 0%, #a62ad7 100%);
+  background: linear-gradient(94deg, #4183f1 0%, #a62ad7 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4173f1', endColorstr='#b52bd7',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-1', endColorstr='$brand-2',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
 
@@ -311,12 +316,12 @@ a {
   background: #b52bd7;
   /* Old browsers */
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(-4deg, #b52bd7 0%, #4173f1 100%);
+  background: -webkit-linear-gradient(-4deg, #a62ad7 0%, #4183f1 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-linear-gradient(356deg, #b52bd7 0%, #4173f1 100%);
-  background: linear-gradient(94deg, #b52bd7 0%, #4173f1 100%);
+  background: -webkit-linear-gradient(356deg, #a62ad7 0%, #4183f1 100%);
+  background: linear-gradient(94deg, #a62ad7 0%, #4183f1 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b52bd7', endColorstr='#4173f1',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-1', endColorstr='$brand-2',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
 
@@ -338,6 +343,12 @@ a {
   font-size: 6rem;
 }
 
+.section__title_subtitle {
+  font-family: "open_sansregular", Arial, sans-serif;
+  font-size: 48px;
+  font-size: 4.8rem;
+}
+
 .section__text {
   max-width: 960px;
   margin-left: auto;
@@ -351,6 +362,80 @@ a {
 .section__title_invert,
 .section__text_invert {
   color: #fff;
+}
+
+.carousel-screenshots {
+  padding-top: 90px;
+}
+
+.carousel-screenshots .carousel-indicators {
+  bottom: -30px;
+}
+
+.carousel-screenshots .carousel-indicators li {
+  height: 14px;
+  width: 14px;
+  margin: 0;
+  margin-right: 20px;
+  border: 2px solid #a62ad7;
+  border-radius: 50%;
+}
+
+.carousel-screenshots .carousel-indicators li:last-child {
+  margin-right: 0;
+}
+
+.carousel-screenshots .carousel-indicators .active {
+  background: #a62ad7;
+}
+
+.carousel-screenshots .row > div {
+  margin-bottom: 30px;
+}
+
+.carousel-screenshots .row img {
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .carousel-screenshots {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-screenshots .row > div {
+    padding-bottom: 20px;
+  }
+}
+
+.screenshot {
+  position: relative;
+}
+
+.screenshot__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background: #a62ad7;
+  /* Old browsers */
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #a62ad7 0%, #4183f1 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #a62ad7 0%, #4183f1 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-2', endColorstr='$brand-1',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.screenshot__overlay:hover {
+  opacity: .7;
 }
 
 .newsletter-form {

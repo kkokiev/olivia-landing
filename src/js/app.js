@@ -10,6 +10,10 @@ if(!(window.console && console.log)) {
 }
 
 $(document).ready(function() {
-
+	$('#carousel-screenshots').each(function(){
+		$(this).carousel({
+			interval: false
+		});
+	});
 
 });

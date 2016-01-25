@@ -1,0 +1,19 @@
+.screenshot{
+	position: relative;
+}
+
+.screenshot__overlay{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		@include gr3();
+		@include tr(.2s);
+		cursor: pointer;
+
+		&:hover{
+			opacity: .7;
+		}
+	}
