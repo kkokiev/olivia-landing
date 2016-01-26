@@ -1,6 +1,6 @@
 .worker{
 	position: relative;
-	margin-bottom: 60px;
+	margin-bottom: 66px;
 	@include font-size(1.6);
 	@include line-height(2.4);
 	text-align: right;
@@ -20,6 +20,8 @@
 }
 
 .worker__name{
+	margin-bottom: 0;
+	padding-top: 6px;
 	font-family: $semibold;
 	@include font-size(1.8);
 	@include line-height(2.4);
@@ -30,6 +32,8 @@
 }
 
 .worker__position{
+	margin-bottom: 13px;
+	padding-bottom: 12px;
 	border-bottom: 1px solid $dark;
 }
 
@@ -38,7 +42,7 @@
 }
 
 .worker__social{
-
+	margin-top: 17px;
 }
 
 .worker__photo{

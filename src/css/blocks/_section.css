@@ -93,6 +93,7 @@
 
 .section__title {
   margin-top: 0px;
+  margin-bottom: 20px;
   font-family: "open_sanssemibold", Arial, sans-serif;
   font-size: 60px;
   font-size: 6rem;
@@ -117,6 +118,16 @@
 .section__title_invert,
 .section__text_invert {
   color: #fff;
+}
+
+.section__copyright {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  font-size: 2rem;
+  padding-bottom: 20px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 @media (max-width: 992px) {

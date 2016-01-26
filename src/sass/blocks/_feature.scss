@@ -44,6 +44,8 @@
 }
 
 .feature__title{
+	margin-top: 25px;
+	margin-bottom: 25px;
 	font-family: $semibold;
 	@include font-size(3);
 }
