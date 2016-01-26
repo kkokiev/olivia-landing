@@ -643,6 +643,7 @@ a {
 }
 
 @media (max-width: 768px) {
+  .carousel,
   .carousel-screenshots {
     padding-top: 30px;
   }
@@ -702,6 +703,12 @@ a {
 
 .carousel-testimonials .carousel-indicators .active {
   background: #fff;
+}
+
+@media (max-width: 768px) {
+  .carousel-testimonials {
+    padding: 0;
+  }
 }
 
 .testimonial {
@@ -800,6 +807,25 @@ a {
   text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+  .support__contacts {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  .support__contacts span {
+    margin: 0 10px;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 480px) {
+  .support__contacts span {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
 .worker {
   position: relative;
   margin-bottom: 66px;
@@ -861,6 +887,39 @@ a {
 .worker__photo_left {
   left: 40px;
   right: auto;
+}
+
+@media (max-width: 1200px) {
+  .worker_align_left {
+    text-align: right;
+  }
+  .worker__info_left {
+    margin-left: 0;
+    margin-right: 270px;
+  }
+  .worker__photo_left {
+    left: auto;
+    right: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .worker,
+  .worker_align_left {
+    text-align: center;
+  }
+  .worker__photo {
+    position: static;
+    margin: 0 auto;
+  }
+  .worker__info,
+  .worker__info_left {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .worker__name {
+    padding-top: 0;
+  }
 }
 
 .social-list {
@@ -1229,6 +1288,6 @@ a {
 
 @media (max-width: 480px) {
   .social__item {
-    margin-right: 10px;
+    margin-right: 5px;
   }
 }

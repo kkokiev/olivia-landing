@@ -60,3 +60,41 @@
 	left: 40px;
 	right: auto;
 }
+
+@media (max-width:1200px) {
+	.worker_align_left{
+		text-align: right;
+	}
+
+	.worker__info_left{
+		margin-left: 0;
+		margin-right: 270px;
+	}
+
+	.worker__photo_left{
+		left: auto;
+		right: 40px;
+	}
+}
+
+@media (max-width:600px) {
+	.worker,
+	.worker_align_left{
+		text-align: center;
+	}
+	.worker__photo{
+		position: static;
+		margin: 0 auto;
+	}
+
+	.worker__info,
+	.worker__info_left{
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.worker__name{
+		padding-top: 0;
+	}
+
+}

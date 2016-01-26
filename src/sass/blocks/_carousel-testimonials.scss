@@ -18,3 +18,9 @@
 		background: $light;
 	}
 }
+
+@media (max-width: 768px) {
+	.carousel-testimonials{
+		padding: 0;
+	}
+}

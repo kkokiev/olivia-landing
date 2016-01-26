@@ -11,3 +11,25 @@
 		text-transform: uppercase;
 	}
 }
+
+@media (max-width:768px) {
+	.support__contacts{
+		margin-bottom: 20px;
+		@include font-size(1.8);
+
+		span{
+			margin: 0 10px;
+			text-transform: uppercase;
+		}
+	}
+
+}
+
+@media (max-width:480px) {
+	.support__contacts{
+		span{
+			display: block;
+			margin: 5px 0;
+		}
+	}
+}
