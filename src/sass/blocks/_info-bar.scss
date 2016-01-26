@@ -1,0 +1,37 @@
+.info-bar{
+	display: table;
+	padding-top: 80px;
+}
+
+.info-bar__left-block,
+.info-bar__right-block{
+	display: table-cell;
+	width: 50%;
+}
+
+.info-bar__left-block{
+	vertical-align: top;
+}
+
+.info-bar__right-block{
+	vertical-align: bottom;
+}
+
+@media (max-width: 992px) {
+	.info-bar{
+		padding-top: 40px;
+	}
+	.info-bar__left-block,
+	.info-bar__right-block{
+		display: block;
+	}
+
+	.info-bar__left-block{
+		width: 100%;
+	}
+
+	.info-bar__right-block{
+		width: 80%;
+		margin: 0 auto;
+	}
+}

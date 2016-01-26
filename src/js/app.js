@@ -10,7 +10,7 @@ if(!(window.console && console.log)) {
 }
 
 $(document).ready(function() {
-	$('#carousel-screenshots').each(function(){
+	$('#carousel-screenshots, #carousel-testimonials, #carousel-blog').each(function(){
 		$(this).carousel({
 			interval: false
 		});

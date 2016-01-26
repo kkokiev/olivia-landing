@@ -1,0 +1,19 @@
+.carousel-testimonials{
+	padding-top: 0;
+
+	.carousel-indicators{
+		bottom: -30px;
+
+		li{
+			border: 2px solid $light;
+
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+
+	.carousel-indicators .active{
+		background: $light;
+	}
+}

@@ -8,13 +8,38 @@
 	text-align: center;
 }
 
+.section_features-1{
+	background: $light url(../img/static/bg-photo-1.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+
+@media (max-width: 768px) {
+	.section_features-1{
+		padding-bottom: 60px;
+	}
+}
+
+.section_features-2{
+	padding-bottom: 0;
+	@include gr2();
+}
+
 .section_screenshots{
 	background: $dark url(../img/static/bg-photo-2.jpg) 0 0 no-repeat;
 	background-size: cover;
 }
 
+.section_testimonials{
+	@include gr1();
+}
+
 .section_newsletter{
 	@include gr2();
+}
+
+.section_blog-widget{
+	background: $dark url(../img/static/bg-photo-3.jpg) 0 0 no-repeat;
+	background-size: cover;
 }
 
 .section_footer{
@@ -55,4 +80,10 @@
 .section__title_invert,
 .section__text_invert{
 	color: $light;
+}
+
+@media (max-width: 992px) {
+	.section__title{
+		@include font-size(3);
+	}
 }
