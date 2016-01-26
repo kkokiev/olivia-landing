@@ -1,0 +1,58 @@
+.worker{
+	position: relative;
+	margin-bottom: 60px;
+	@include font-size(1.6);
+	@include line-height(2.4);
+	text-align: right;
+}
+
+.worker_align_left{
+	text-align: left;
+}
+
+.worker__info{
+	margin-right: 270px;
+}
+
+.worker__info_left{
+	margin-left: 270px;
+	margin-right: 0;
+}
+
+.worker__name{
+	font-family: $semibold;
+	@include font-size(1.8);
+	@include line-height(2.4);
+
+	span{
+		text-transform: uppercase;
+	}
+}
+
+.worker__position{
+	border-bottom: 1px solid $dark;
+}
+
+.worker__details{
+
+}
+
+.worker__social{
+
+}
+
+.worker__photo{
+	position: absolute;
+	top: 0;
+	left: auto;
+	right: 40px;
+	display: block;
+	height: 190px;
+	width: 190px;
+	@include border-radius(50%);
+}
+
+.worker__photo_left{
+	left: 40px;
+	right: auto;
+}

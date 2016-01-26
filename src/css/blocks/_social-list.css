@@ -1,0 +1,7 @@
+.social-list {
+  text-align: right;
+}
+
+.social-list__item {
+  display: inline-block;
+}

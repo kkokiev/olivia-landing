@@ -461,12 +461,12 @@ a {
 }
 
 .feature__img_3 {
-  background: transparent url(../img/static/image_n.png) 0 0 no-repeat;
+  background: transparent url(../img/static/image_g.png) 0 0 no-repeat;
   background-size: cover;
 }
 
 .feature__img_3:hover {
-  background: transparent url(../img/static/image_hover.png) 0 0 no-repeat;
+  background: transparent url(../img/static/image_g_hover.png) 0 0 no-repeat;
   background-size: cover;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
@@ -769,6 +769,102 @@ a {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.support {
+  padding-top: 30px;
+}
+
+.support__contacts {
+  margin-bottom: 80px;
+  font-size: 27px;
+  font-size: 2.7rem;
+}
+
+.support__contacts span {
+  margin: 0 20px;
+  text-transform: uppercase;
+}
+
+.worker {
+  position: relative;
+  margin-bottom: 60px;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 24px;
+  line-height: 2.4rem;
+  text-align: right;
+}
+
+.worker_align_left {
+  text-align: left;
+}
+
+.worker__info {
+  margin-right: 270px;
+}
+
+.worker__info_left {
+  margin-left: 270px;
+  margin-right: 0;
+}
+
+.worker__name {
+  font-family: "open_sanssemibold", Arial, sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 24px;
+  line-height: 2.4rem;
+}
+
+.worker__name span {
+  text-transform: uppercase;
+}
+
+.worker__position {
+  border-bottom: 1px solid #3b434d;
+}
+
+.worker__photo {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 40px;
+  display: block;
+  height: 190px;
+  width: 190px;
+  border-radius: 50%;
+}
+
+.worker__photo_left {
+  left: 40px;
+  right: auto;
+}
+
+.social-list {
+  padding: 0;
+}
+
+.social-list__item {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.social-list__item:last-child {
+  margin-right: 0;
+}
+
+.social-list__link {
+  color: #3b434d;
+  font-size: 20px;
+  font-size: 2rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+  color: #a62ad7;
 }
 
 .newsletter-form {

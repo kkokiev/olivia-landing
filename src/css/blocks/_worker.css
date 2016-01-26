@@ -1,0 +1,13 @@
+.worker {
+  position: relative;
+}
+
+.worker__info {
+  margin-right: 270px;
+}
+
+.worker__photo {
+  display: block;
+  height: 190px;
+  width: 190px;
+}

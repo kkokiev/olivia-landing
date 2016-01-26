@@ -33,11 +33,11 @@
 }
 
 .feature__img_3{
-	background: transparent url(../img/static/image_n.png) 0 0 no-repeat;
+	background: transparent url(../img/static/image_g.png) 0 0 no-repeat;
 	background-size: cover;
 
 	&:hover{
-		background: transparent url(../img/static/image_hover.png) 0 0 no-repeat;
+		background: transparent url(../img/static/image_g_hover.png) 0 0 no-repeat;
 		background-size: cover;
 		transform: rotateY(180deg);
 	}

@@ -1,2 +1,2 @@
-<h1>olivia-landing page template</h1>
-<p>Bootstrap, Font awsome</p>
+<h1>Olivia-landing page template</h1>
+<p>Bootstrap, Font awsome, Sass, BEM </p>

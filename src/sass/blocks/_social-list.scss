@@ -1,0 +1,23 @@
+.social-list{
+	padding: 0;
+}
+
+.social-list__item{
+	display: inline-block;
+	margin-right: 12px;
+
+	&:last-child{
+		margin-right: 0;
+	}
+}
+
+.social-list__link{
+	color: $dark;
+	@include font-size(2);
+	@include tr(.4s);
+
+	&:hover,
+	&:focus{
+		color: $brand-2;
+	}
+}

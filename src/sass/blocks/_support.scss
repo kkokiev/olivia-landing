@@ -1,0 +1,13 @@
+.support{
+	padding-top: 30px;
+}
+
+.support__contacts{
+	margin-bottom: 80px;
+	@include font-size(2.7);
+
+	span{
+		margin: 0 20px;
+		text-transform: uppercase;
+	}
+}
