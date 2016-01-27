@@ -3078,7 +3078,7 @@ a {
 
 @media (max-width: 992px) {
   .header__content {
-    padding-top: 20px;
+    padding-top: 0px;
   }
 }
 
