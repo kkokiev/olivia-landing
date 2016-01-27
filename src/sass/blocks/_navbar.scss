@@ -2,8 +2,19 @@
 	padding-top: 50px;
 }
 
+.navbar-fixed-top{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	@include gr1();
+	border-bottom: 1px solid $light;
+}
+
 @media (max-width: 992px) {
 	.navbar{
 		padding-top: 20px;
+	}
+
+	.navbar-fixed-top{
+		padding-bottom: 5px;
 	}
 }

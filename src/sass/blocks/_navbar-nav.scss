@@ -1,11 +1,10 @@
 .navbar-nav{
-	padding-top: 15px;
+	padding-top: 5px;
 
 	>li{
 
-
 		>a{
-			padding: 10px 20px;
+			// padding: 10px 20px;
 			color: $light;
 			font-family: $font-special;
 			@include font-size(1.8);
@@ -20,6 +19,10 @@
 			}
 		}
 	}
+
+	>.active a{
+			background: $brand-2;
+		}
 
 
 }

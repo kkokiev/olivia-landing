@@ -33,6 +33,27 @@
 	}
 }
 
+@media (max-width:992px) {
+	.carousel-screenshots{
+		padding-bottom: 30px;
+	}
+	.carousel,
+	.carousel-screenshots{
+
+		.carousel-indicators{
+			li{
+				height: 35px;
+				width: 35px;
+
+				margin-right: 35px;
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
 @media (max-width: 768px) {
 	.carousel,
 	.carousel-screenshots{
