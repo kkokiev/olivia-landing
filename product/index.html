@@ -12,8 +12,8 @@
 	<!-- Bootstrap styles -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-	<!-- Font Awsome -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!--Load Font Awsome without js-->
+	<noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></noscript>
 
 	<!-- Load CSS Compilled without JS -->
 	<link rel="stylesheet" href="css/style.css">
@@ -61,7 +61,7 @@
 
 					<div class="col-sm-6 col-sm-push-6 col-md-7 col-md-push-5">
 
-						<div class="intro">
+						<div class="intro animated bounceInRight">
 							<h1 class="intro__title">Hello &amp; Wellcome <br> to Olivia</h1>
 							<p class="intro__text">Compellingly fashion enterprise-wide services before client-based outsourcing. Enthusiastically reinvent inexpensive innovation rather than collaborative expertise. Synergistically communicate equity invested markets for tactical portals. </p>
 
@@ -79,13 +79,19 @@
 					</div>
 
 					<div class="col-sm-6 col-sm-pull-6 col-md-5 col-md-pull-7">
-						<img src="img/static/iphone.png" alt="iphone" class="img-responsive header__img">
+						<img src="img/static/iphone.png" alt="iphone" class="img-responsive header__img animated bounceInLeft">
 					</div>
 
 				</div>
 			</div><!-- /.container -->
 		</div><!-- /.header__content -->
 	</header><!-- /.header -->
+
+
+<!-- Load Font Awsome -->
+<script>var font=document.createElement("link");font.rel="stylesheet";
+	font.href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";document.getElementsByTagName("head")[0].appendChild(font);
+</script>
 
 
 	<!-- FEATURES 1-->
@@ -733,6 +739,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <!-- Hammerjs -->
 <script src="lib/jquery.touchSwipe.min.js"></script>
+<!-- Waypoints -->
+<script src="lib/jquery.waypoints.min.js"></script>
 <!-- Aplication -->
 <script src="js/app.js"></script>
 </body>

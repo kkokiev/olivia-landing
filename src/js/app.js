@@ -63,4 +63,25 @@ $(document).ready(function() {
 	}
 	window.addEventListener("scroll", addFixedClass);
 
+
+	//setup some animations on page
+	$('.features').css('opacity', 0);
+
+	$('.features').waypoint(function() {
+		$('.features').addClass('animated fadeInUp');
+	}, { offset: '80%' });
+
+
+	$('.info-list__item').css('opacity', 0);
+	$('.info-list__item:first-child').waypoint(function() {
+		$('.info-list__item:first-child').addClass('animated fadeInLeft');
+	}, { offset: '80%' });
+
+	$('.info-list__item:nth-child(2)').waypoint(function() {
+		$('.info-list__item:nth-child(2)').addClass('animated fadeInLeft');
+	}, { offset: '85%' });
+
+	$('.info-list__item:last-child').waypoint(function() {
+		$('.info-list__item:last-child').addClass('animated fadeInLeft');
+	}, { offset: '90%' });
 });
