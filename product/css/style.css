@@ -3140,12 +3140,15 @@ a {
   transition: all 0.5s ease;
 }
 
-.navbar-nav > li > a:hover,
-.navbar-nav > li > a:focus {
+.navbar-nav > li > a:hover {
   background: #a62ad7;
 }
 
-.navbar-nav > .active a {
+.navbar-nav > li > a:focus {
+  background: transparent;
+}
+
+.navbar-nav > li.active a {
   background: #a62ad7;
 }
 
@@ -3334,11 +3337,6 @@ a {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-1', endColorstr='$brand-2',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
-}
-
-.section_screenshots {
-  background: #3b434d url(../img/static/bg-photo-2.jpg) 0 0 no-repeat;
-  background-size: cover;
 }
 
 .section_testimonials {

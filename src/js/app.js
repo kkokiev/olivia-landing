@@ -108,4 +108,8 @@ $(document).ready(function() {
 	$('.form__submit').waypoint(function() {
 		$('.form__submit').addClass('animated fadeInUp');
 	}, { offset: '100%' });
+
+
+	//parallax
+	$('.section_screenshots').parallax({imageSrc: 'img/static/bg-photo-2.jpg'});
 });

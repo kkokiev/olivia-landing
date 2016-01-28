@@ -13,14 +13,17 @@
 			@include border-radius(20px);
 			@include tr(.5s);
 
-			&:hover,
-			&:focus{
+			&:hover{
 				background: $brand-2;
+			}
+
+			&:focus{
+				background: transparent;
 			}
 		}
 	}
 
-	>.active a{
+	>li.active a{
 			background: $brand-2;
 		}
 }
