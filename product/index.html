@@ -17,6 +17,10 @@
 
 	<!-- Load CSS Compilled without JS -->
 	<link rel="stylesheet" href="css/style.css">
+
+	<!--[if IE 9]>
+	<link rel="stylesheet" href="css/ie9.css">
+	<![endif]-->
 </head>
 
 <body class="page" data-spy="scroll" data-target="#navbar" data-offset="100">
@@ -699,18 +703,22 @@
 
 			<form class="form">
 				<div class="form-group form__group">
+					<label>First Name</label>
 					<input type="text" class="form-control form__input" name="first-name" placeholder="First Name" required>
 				</div>
 
 				<div class="form-group form__group">
+					<label>Last Name</label>
 					<input type="text" class="form-control form__input" name="last-name" placeholder="Last Name" required>
 				</div>
 
 				<div class="form-group form__group">
+					<label>Email adress</label>
 					<input type="email" class="form-control form__input" name="email" placeholder="Email Adress" required>
 				</div>
 
 				<div class="form-group form__group">
+					<label>Tel.Number</label>
 					<input type="tel" class="form-control form__input" name="phone" placeholder="Tel.Number" required>
 				</div>
 				<div class="form-group form__group-textarea">

@@ -1,0 +1,10 @@
+//styles for ie9
+@import "variables";
+
+.form__group label{
+	display: block;
+	color: $light;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+}
