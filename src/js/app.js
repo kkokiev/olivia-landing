@@ -9,7 +9,7 @@ if(!(window.console && console.log)) {
 	};
 }
 
-$(document).ready(function() {
+$(function () {
 
 	//stop carousels auto scroll
 	$('#carousel-screenshots, #carousel-testimonials, #carousel-blog').each(function(){
@@ -19,7 +19,7 @@ $(document).ready(function() {
 	});
 
 	//setup swipe carousel pages on touch
-	$(".carousel-inner").swipe( {
+	$(".js-carousel-inner").swipe( {
 		//Generic swipe handler for all directions
 		swipeLeft:function(event, direction, distance, duration, fingerCount) {
 			$(this).parent().carousel('next');
@@ -31,9 +31,31 @@ $(document).ready(function() {
 		threshold:0
 	});
 
+
 	//Smooth Scrolling
-	var topOffset = 80
-	$('.js-link').click(function() {
+	var $jsLink = $('.js-link'),
+		topOffset = 0;
+
+	function setupOffset() {
+		var $winWidth = $(window).width();
+
+		if($winWidth > 480) {
+
+			//80 is a height of navbar
+			topOffset = 80;
+		}else{
+
+			//70 is a height of navbar
+			topOffset = 70;
+		}
+	}
+
+	setupOffset();
+	$(window).resize(function(){
+		setupOffset();
+	});
+
+	$jsLink.click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 			var target = $(this.hash);
 			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -46,7 +68,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.js-link').on('click', function(){
+	$jsLink.on('click', function(){
 		setTimeout (function(){
 			 $('#navbar').collapse('hide');
 		}, 1000);
@@ -65,48 +87,64 @@ $(document).ready(function() {
 
 
 	//setup some animations on page
-	$('.features').css('opacity', 0);
 
-	$('.features').waypoint(function() {
-		$('.features').addClass('animated fadeInUp');
+	//section features 1
+	var $features = $('.features');
+	$features.css('opacity', 0);
+
+	$features.waypoint(function() {
+		$features.addClass('animated fadeInUp');
 	}, { offset: '80%' });
 
+
+	//section features2
+	var $jsInfoItem1 = $('.js-info-item-1'),
+		$jsInfoItem2 = $('.js-info-item-2'),
+		$jsInfoItem3 = $('.js-info-item-3');
 
 	$('.info-list__item').css('opacity', 0);
-	$('.info-list__item:first-child').waypoint(function() {
-		$('.info-list__item:first-child').addClass('animated fadeInLeft');
+	$jsInfoItem1.waypoint(function() {
+		$jsInfoItem1.addClass('animated fadeInLeft');
 	}, { offset: '80%' });
 
-	$('.info-list__item:nth-child(2)').waypoint(function() {
-		$('.info-list__item:nth-child(2)').addClass('animated fadeInLeft');
+	$jsInfoItem2.waypoint(function() {
+		$jsInfoItem2.addClass('animated fadeInLeft');
 	}, { offset: '85%' });
 
-	$('.info-list__item:last-child').waypoint(function() {
-		$('.info-list__item:last-child').addClass('animated fadeInLeft');
+	$jsInfoItem3.waypoint(function() {
+		$jsInfoItem3.addClass('animated fadeInLeft');
 	}, { offset: '90%' });
 
+
+	//section support
+	var $jsWorker1 = $('.js-worker-1'),
+		$jsWorker2 = $('.js-worker-2'),
+		$jsWorker3 = $('.js-worker-3'),
+		$jsWorker4 = $('.js-worker-4');
 
 	$('.worker').css('opacity', 0);
-	$('.js-worker-1').waypoint(function() {
-		$('.js-worker-1').addClass('animated fadeInLeft');
+	$jsWorker1.waypoint(function() {
+		$jsWorker1.addClass('animated fadeInLeft');
 	}, { offset: '70%' });
 
-	$('.js-worker-2').waypoint(function() {
-		$('.js-worker-2').addClass('animated fadeInLeft');
+	$jsWorker2.waypoint(function() {
+		$jsWorker2.addClass('animated fadeInLeft');
 	}, { offset: '90%' });
 
-	$('.js-worker-3').waypoint(function() {
-		$('.js-worker-3').addClass('animated fadeInRight');
+	$jsWorker3.waypoint(function() {
+		$jsWorker3.addClass('animated fadeInRight');
 	}, { offset: '60%' });
 
-	$('.js-worker-4').waypoint(function() {
-		$('.js-worker-4').addClass('animated fadeInRight');
+	$jsWorker4.waypoint(function() {
+		$jsWorker4.addClass('animated fadeInRight');
 	}, { offset: '80%' });
 
 
-	$('.form__submit').css('opacity', 0);
-	$('.form__submit').waypoint(function() {
-		$('.form__submit').addClass('animated fadeInUp');
+	// section footer
+	var $formSubmit = $('.js-form-submit');
+	$formSubmit.css('opacity', 0);
+	$formSubmit.waypoint(function() {
+		$formSubmit.addClass('animated fadeInUp');
 	}, { offset: '100%' });
 
 	//parallax

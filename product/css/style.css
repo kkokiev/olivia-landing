@@ -3111,6 +3111,15 @@ a {
   }
 }
 
+@media (max-width: 480px) {
+  .navbar {
+    padding-top: 10px;
+  }
+  .navbar-fixed-top {
+    padding-bottom: 0;
+  }
+}
+
 .navbar-brand {
   display: inline-block;
   height: 60px;

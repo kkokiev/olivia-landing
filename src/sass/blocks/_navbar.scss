@@ -18,3 +18,13 @@
 		padding-bottom: 5px;
 	}
 }
+
+@media (max-width: 480px) {
+	.navbar{
+		padding-top: 10px;
+	}
+
+	.navbar-fixed-top{
+		padding-bottom: 0;
+	}
+}
