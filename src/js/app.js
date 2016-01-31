@@ -76,11 +76,14 @@ $(function () {
 
 	//add class too navbar on scroll
 	function addFixedClass(){
-		var nav = $('#navbar-container');
+		var $nav = $('#navbar-container');
+		var $headerContent = $('.js-header-content');
 		yPos = window.pageYOffset;
-		nav.removeClass("navbar-fixed-top");
+		$nav.removeClass("navbar-fixed-top animated slideInDown");
+		$headerContent.removeClass('header__content_pt_220');
 		if(yPos > 120){
-			nav.addClass("navbar-fixed-top");
+			$nav.addClass("navbar-fixed-top animated slideInDown");
+			$headerContent.addClass('header__content_pt_220');
 		}
 	}
 	window.addEventListener("scroll", addFixedClass);
